@@ -1,0 +1,18 @@
+<button id="addAction" onclick="addAction();">Add 1 t0 10</button>
+<p>Output: <span id="output"></span></p>
+<script>
+	var total=0,
+		count=0,
+		output = document.getElementById('output');
+
+	function addAction(){
+		while(count <= 10){
+			total += count;
+			count++;
+		}
+		output.innerHTML = total;
+	}
+
+	var result = addAction;
+
+</script>
