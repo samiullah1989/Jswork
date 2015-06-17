@@ -35,3 +35,17 @@ repeat(3, function(n){
 		console.log(n, "is even");
 	});
 });
+
+var ancestory = JSON.parse(ANCESTORY_FILE);
+
+function filter(array, test	) {
+	var passed = [];
+	for (var i = 0; i < array.length; i++) {
+		if(test(array[i])){
+			passed.push(array[i]);
+		}
+	}
+	return passed;
+}
+
+
